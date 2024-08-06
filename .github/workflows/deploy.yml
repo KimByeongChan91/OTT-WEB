@@ -1,4 +1,4 @@
-name: Azure Login with Federated Identity and Deployment
+name: Azure Login and Deployment
 
 on:
   push:
@@ -28,7 +28,6 @@ jobs:
       - name: Azure Login
         uses: azure/login@v1
         with:
-          auth-type: 'azureclitoken'
           client-id: ${{ secrets.AZURE_CLIENT_ID_SECURITY }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
