@@ -18,7 +18,7 @@ export const fetchUserWishAdd = async (
   try {
     const response = await axios
       .post<UserWishAddResponseType>(
-        `https://ott-ss.azurewebsites.net/wishlist/user/add`,
+        `https://ott-web-fge9c9ekdjawazgc.koreacentral-01.azurewebsites.net/wishlist/user/add`,
         userWishData,
         {
           headers: {
