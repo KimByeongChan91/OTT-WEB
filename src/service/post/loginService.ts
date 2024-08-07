@@ -11,7 +11,7 @@ export const loginService = async (loginData: LoginDataType) => {
   try {
     const response = await axios
       .post<LoginResponseType>(
-        `https://ott-ss.azurewebsites.net/auth/login`,
+        `https://ott-web-fge9c9ekdjawazgc.koreacentral-01.azurewebsites.net/auth/login`,
         loginData,
         {
           headers: {
