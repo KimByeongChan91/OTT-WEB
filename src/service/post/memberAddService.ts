@@ -20,7 +20,7 @@ export const fetchMemberAdd = async (
   try {
     const response = await axios
       .post<MemberAddResponseType>(
-        `https://ott-ss.azurewebsites.net/memberprofile/add`,
+        `https://ott-web-fge9c9ekdjawazgc.koreacentral-01.azurewebsites.net/memberprofile/add`,
         memberData,
         {
           headers: {
